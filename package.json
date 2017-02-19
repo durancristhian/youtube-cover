@@ -1,0 +1,21 @@
+{
+  "name": "youtube-cover",
+  "description": "It allows you to generate covers for youtube videos",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "gh-pages -d public",
+    "start": "browser-sync start --port 6590 --server 'public' --files 'public' --no-open --no-online --no-ui"
+  },
+  "keywords": [
+    "youtube",
+    "cover"
+  ],
+  "author": "durancristhian@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "browser-sync": "^2.18.8",
+    "eslint": "^3.15.0",
+    "gh-pages": "^0.12.0"
+  }
+}

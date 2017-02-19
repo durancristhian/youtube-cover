@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtube cover generator</title>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.6.1/css/tachyons.min.css">
+</head>
+<body class="bg-washed-yellow ma0">
+    <div class="dark-gray fw2">
+        <header class="b--black-20 bb bg-white ph4 pv3">
+            <div class="center mw8">
+                <h1 class="f3 fw2 items-center ma0 silver tc">Youtube cover generator</h1>
+            </div>
+        </header>
+        <div class="center flex flex-column mw6 pa4">
+            <h2 class="fw2 mb4 mt0 silver">Content</h2>
+            <label for="title">Title</label>
+            <input type="text" id="title" class="b--black-20 ba mb4 mt1 outline-0 pa2 js-input" placeholder="JavaScript is eating the world!">
+            <label for="subtitle">Subtitle</label>
+            <input type="text" id="subtitle" class="b--black-20 ba mb4 mt1 outline-0 pa2 js-input" placeholder="By Cristhian Duran - @durancristhian">
+            <label for="footer">Footer</label>
+            <input type="text" id="footer" class="b--black-20 ba mb4 mt1 outline-0 pa2 js-input" placeholder="Meetup.js Buenos Aires">
+            <h2 class="fw2 mb4 mt0 silver">Style</h2>
+            <label for="bgColor">Background CSS color</label>
+            <input type="text" id="bgColor" class="b--black-20 ba mb4 mt1 outline-0 pa2 js-input" placeholder="#ddd">
+            <label for="bgImage">Background image URL</label>
+            <input type="text" id="bgImage" class="b--black-20 ba mb4 mt1 outline-0 pa2 js-input" placeholder="">
+            <input type="button" id="generate" href="#!" class="b--black-20 ba bg-white dark-gray fw2 link ph3 pv2 self-center js-input" value="Generate"></input>
+        </div>
+    </div>
+    <div class="fixed top-0" style="left: 110vw;">
+        <div id="cover" style="height: 720px; width: 1280px;"></div>
+    </div>
+    <script defer src="https://unpkg.com/dom-to-image@2.5.2/dist/dom-to-image.min.js"></script>
+    <script defer src="app.js"></script>
+</body>
+</html>
